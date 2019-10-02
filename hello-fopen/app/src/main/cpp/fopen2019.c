@@ -24,7 +24,7 @@ void xprintf(const char *format, ...) {
 }
 
 /*
- * Trys fopen - fread - fclose many times.
+ * Trys fopen - fread - fclose.
  * The problem is that fopen in this function occasionally fails on Pixel3.
  */
 void do_fopen_fread_fclose(void* data) {
