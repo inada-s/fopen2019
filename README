@@ -1,23 +1,23 @@
 fopen2019
-----
+-----
 
-fopen errno = 13 を再現するプログラムです。
+# PROBLEM
+fopen occasionally fails on relatively recent Android such as Pixcel3, leaving errno = 13 (Permission Denied).
 
-hello-jni: https://github.com/android/ndk-samples/tree/master/hello-jni
-をベースにして再現プログラムを追加しました。
+# ABOUT THIS
+This is an example project to reproduce the problem.
 
-fopen を繰り返しつつ、mallocでメモリ最大3GB確保するようなプログラムになっています。
+This example is based on hello-jni project.
+https://github.com/android/ndk-samples/tree/master/hello-jni
 
-詳しくは, `./hello-fopen/app/src/main/cpp/fopen2019.c` を参照してください。
+The core is hello-fopen/app/src/main/cpp/fopen2019.c
+It calls fopen many times while allocating memory with malloc.
 
-
-* 再現を確認した端末
-
-XPERIA1 SOV40
-- Android 9
-- 55.0.C.0.475
-
+# REPRODUCED DEVICES
 Pixel3
 - Android 9
 - Build PQ1A.181205.006
 
+XPERIA1 SOV40
+- Android 9
+- 55.0.C.0.475
