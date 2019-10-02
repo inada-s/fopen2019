@@ -10,7 +10,8 @@ This is an example project to reproduce the problem.
 This example is based on hello-jni project.
 https://github.com/android/ndk-samples/tree/master/hello-jni
 
-The core is hello-fopen/app/src/main/cpp/fopen2019.c
+The core is fopen2019.c (https://github.com/inada-s/fopen2019/blob/master/hello-fopen/app/src/main/cpp/fopen2019.c)
+
 It calls fopen many times while allocating memory with malloc.
 
 # REPRODUCED DEVICES
