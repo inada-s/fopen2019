@@ -25,7 +25,7 @@ void xprintf(const char *format, ...) {
 
 /*
  * Trys fopen - fread - fclose many times.
- * The problem is that fopen occasionally fails on Pixel3 in this function.
+ * The problem is that fopen in this function occasionally fails on Pixel3.
  */
 void do_fopen_fread_fclose(void* data) {
     const char* path = (const char*) data;
@@ -53,7 +53,7 @@ void do_fopen_fread_fclose(void* data) {
 }
 
 /*
- * creates dummy file to specified path.
+ * creates a dummy file to specified path.
  */
 void create_dummy_file(const char* path) {
     xprintf("create_dummy_file %s", path);
