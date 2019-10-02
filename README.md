@@ -2,7 +2,7 @@ fopen2019
 -----
 
 # PROBLEM
-fopen occasionally fails on relatively recent Android such as Pixcel3, leaving errno = 13 (Permission Denied).
+fopen occasionally fails on relatively recent Android such as Pixel3, leaving errno = 13 (Permission Denied).
 
 # ABOUT THIS
 This is an example project to reproduce the problem.
