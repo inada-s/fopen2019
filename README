@@ -1,0 +1,23 @@
+fopen2019
+----
+
+fopen errno = 13 を再現するプログラムです。
+
+hello-jni: https://github.com/android/ndk-samples/tree/master/hello-jni
+をベースにして再現プログラムを追加しました。
+
+fopen を繰り返しつつ、mallocでメモリ最大3GB確保するようなプログラムになっています。
+
+詳しくは, `./hello-fopen/app/src/main/cpp/fopen2019.c` を参照してください。
+
+
+* 再現を確認した端末
+
+XPERIA1 SOV40
+- Android 9
+- 55.0.C.0.475
+
+Pixel3
+- Android 9
+- Build PQ1A.181205.006
+
