@@ -13,7 +13,7 @@ The core is [fopen2019.c](hello-fopen/app/src/main/cpp/fopen2019.c). It calls fo
 
 # HOW TO CHECK
 
-See [hello-jni/README.md](hello-fopen#getting-started). The problem doesn't occur on Android Emulator, so you must prepare on real device.
+See [hello-jni/README.md](hello-fopen#getting-started). The problem doesn't occur on Android Emulator, so you must prepare  a real device.
 
 After clicking Run/Run 'app', open logcat window and find the message `fopen failed errno = 13`.
 
